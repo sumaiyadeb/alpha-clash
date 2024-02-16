@@ -10,6 +10,27 @@ function setBackgroundColorById(elementId) {
   const element = document.getElementById(elementId);
   element.classList.add("bg-orange-800");
 }
+function removeBackgroundColorById(elementId) {
+  const element = document.getElementById(elementId);
+  element.classList.remove("bg-orange-800");
+}
+
+// game  a score
+function getElementValueById(elementId) {
+  const element = document.getElementById(elementId);
+  const elementValue = element.innerText;
+  const value = parseInt(elementValue);
+  return value;
+}
+function setTextElementValueById(elementId, value) {
+  const element = document.getElementById(elementId);
+  element.innerText = value;
+}
+function getElementTextById(elementId) {
+  const element = document.getElementById(elementId);
+  const text = element.innerText;
+  return text;
+}
 
 // function getARandomAlphabet() {
 // get or create an alphabet array
